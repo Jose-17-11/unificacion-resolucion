@@ -1,0 +1,26 @@
+---
+import Card from "../Card.astro"
+import { Image } from "astro:assets";
+import ImgExample from "../../assets/lambda.png"
+---
+<section class="w-full min-h-screen bg-gray-800 flex flex-col py-8" >
+    <div class="w-full min-h-[30vh] flex flex-col justify-start items-center my-8" >
+        <h2 class="text-white text-3xl text-center font-bold mb-8" >Unificación</h2>
+        <p class="text-slate-300 text-center max-w-[600px] mx-auto" >
+            La unificación es un procedimiento clave en la lógica de primer orden, usado para emparejar 
+            términos y resolver conflictos lógicos en la representación de conocimiento. Es fundamental 
+            para sistemas de inferencia y lenguajes de programación lógica como Prolog.
+        </p>
+    </div>
+    <aside class="w-full min-h-[70vh] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center items-stretch" >
+        <Card title="ejemplo" text="ejemplo texto de relleno xD">
+            <Image src={ImgExample} alt="Imagen de la card" class="w-full h-full" />
+        </Card>
+        <Card title="ejemplo" text="ejemplo texto de relleno xD">
+            <Image src={ImgExample} alt="Imagen de la card" class="w-full h-full" />
+        </Card>
+        <Card title="ejemplo" text="ejemplo texto de relleno xD">
+            <Image src={ImgExample} alt="Imagen de la card" class="w-full h-full" />
+        </Card>
+    </aside>
+</section>
