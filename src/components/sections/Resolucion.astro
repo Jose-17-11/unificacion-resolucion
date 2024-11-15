@@ -1,9 +1,27 @@
-<section class="w-full min-h-screen" id="resolucion">
-    <h2>Resolución</h2>
-    <p>
-        La resolución es un método de inferencia lógica que se utiliza para deducir conclusiones a partir de 
-        un conjunto de proposiciones, transformadas en cláusulas. La técnica principal en resolución es la 
-        refutación por contradicción (o reducción al absurdo), en la cual se intenta probar que una 
-        proposición es verdadera demostrando que su negación lleva a una contradicción.
-    </p>
+---
+import { Image } from "astro:assets"
+import Card from "../Card.astro"
+import ImgExample from "../../assets/lambda.png"
+---
+<section class="w-full min-h-screen flex flex-col py-8" id="resolucion" >
+    <div class="w-full min-h-[30vh] flex flex-col justify-start items-center my-8" >
+        <h2 class="text-3xl text-center font-bold mb-8">Resolución</h2>
+        <p class="text-slate-700 text-center max-w-[600px] mx-auto">
+            La resolución es un método de inferencia lógica que se utiliza para deducir conclusiones a partir de 
+            un conjunto de proposiciones, transformadas en cláusulas. La técnica principal en resolución es la 
+            refutación por contradicción (o reducción al absurdo), en la cual se intenta probar que una 
+            proposición es verdadera demostrando que su negación lleva a una contradicción.
+        </p>
+    </div>
+    <aside class="w-full min-h-[70vh] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center items-stretch" >
+        <Card title="ejemplo" text="ejemplo texto de relleno xD">
+            <Image src={ImgExample} alt="Imagen de la card" class="w-full h-full" />
+        </Card>
+        <Card title="ejemplo" text="ejemplo texto de relleno xD">
+            <Image src={ImgExample} alt="Imagen de la card" class="w-full h-full" />
+        </Card>
+        <Card title="ejemplo" text="ejemplo texto de relleno xD">
+            <Image src={ImgExample} alt="Imagen de la card" class="w-full h-full" />
+        </Card>
+    </aside>
 </section>
