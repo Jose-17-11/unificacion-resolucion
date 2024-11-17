@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+import ImgageEjemploUnificacion from '../assets/unificacion-ejemplo.jpg'
+import LayoutPost from '../layouts/LayoutPost.astro';
+---
+<LayoutPost title="Ejemplo de unificación">
+        <Image src={ImgageEjemploUnificacion} alt="Imagen de ejemplo de unificacion" class="h-[30vh] w-auto object-cover" slot="ImgHeader" />
+        <div class="w-3/4 mx-auto" >
+            <h1 class="text-4xl font-bold text-center py-4" >Ejemplo de unificación</h1>
+            <p class="text-xl my-4">
+                Este procedimiento evita colisiones al modificar los términos para hacerlos compatibles, asegurando que los términos resultantes no causen conflictos en el contexto lógico en que se encuentran.
+            </p>
+            <p class="text-xl my-4">
+                Prolog y Lenguajes de Programación Lógica: La unificación es esencial en Prolog y otros lenguajes de programación lógica, donde permite la ejecución de reglas lógicas de inferencia y búsqueda de soluciones.
+            </p>
+            <p class="text-xl my-4">
+                Sistemas de Razonamiento Automático: Los sistemas de razonamiento, como los sistemas expertos, utilizan la unificación para verificar reglas y aplicar conclusiones a partir de hechos conocidos.
+            </p>
+            <p class="text-xl my-4">
+                Ejemplo Detallado de Unificación: Consideremos los términos complejos p(x,h(y,z)) y p(a,h(b,w)).
+            </p>
+            <ul class="list-disc pl-5" >
+                <li class="py-2" >El predicado es p, por lo que coinciden.</li>
+                <li class="py-2" >Unificamos cada par de argumentos: x con a, h(y,z) con h(b,w).</li>
+                <li class="py-2" >
+                    La sustitución &#123;x→a,y→b,z→w&#125; hace que ambos términos se conviertan en p(a,h(b,w)), completando la unificación sin conflictos.
+                </li>                  
+            </ul>
+            <figure class="flex justify-center items-center h-[40vh] w-full" >
+                <p>Aquí falta una imagen del ejemplo</p>
+            </figure>
+        </div>
+</LayoutPost>

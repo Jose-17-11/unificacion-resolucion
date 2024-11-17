@@ -1,0 +1,28 @@
+---
+import { Image } from 'astro:assets';
+import HeaderArticle from '../components/HeaderArticle.astro';
+import Footer from '../components/Footer.astro';
+
+const { title, ImgageEjemploUnificacion, textAlt } = Astro.props;
+---
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Somos el equipo Lambda labs que proporciona soluciones y ayuda en temas de programación e ingenieria." />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/lambda.jpg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+        <HeaderArticle />
+		<main>
+            <header class="w-full h-[40vh] flex justify-center items-center" >
+                <slot name="ImgHeader" />
+            </header>
+            <slot />
+        </main>
+		<Footer />
+	</body>
+</html>
