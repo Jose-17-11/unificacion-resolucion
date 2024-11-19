@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+import ResolucionRefutacionImage from '../assets/resolucion-refutacion-lineal.png';
+import LayoutPost from '../layouts/LayoutPost.astro';
+---
+<LayoutPost title="Resolución por Refutación Lineal y Formas Normalizadas">
+    <Image src={ResolucionRefutacionImage} alt="Ilustración de refutación y formas normalizadas" class="h-[30vh] w-auto object-cover" slot="ImgHeader" />
+    <div class="w-3/4 mx-auto">
+        <h1 class="text-4xl font-bold text-center py-4">Resolución por Refutación Lineal y Formas Normalizadas</h1>
+        <p class="text-xl my-4">
+            Este método se basa en transformar las proposiciones en una representación estándar (forma normal) para aplicar el principio de refutación. Es fundamental para sistemas automáticos de deducción.
+        </p>
+        <h2 class="text-2xl font-semibold mt-6">Formas Normalizadas</h2>
+        <ul class="list-disc pl-5">
+            <li class="py-2">
+                <strong>Forma Normal Conjuntiva (CNF):</strong> Todas las fórmulas se convierten en una conjunción de disyunciones de literales.
+            </li>
+            <li class="py-2">
+                <strong>Forma Normal Disyuntiva (DNF):</strong> Las proposiciones se expresan como disyunciones de conjunciones, usadas en algunos sistemas lógicos.
+            </li>
+        </ul>
+        <h2 class="text-2xl font-semibold mt-6">Resolución por Refutación Lineal</h2>
+        <p class="text-xl my-4">
+            Este método selecciona cláusulas secuenciales, verificando su resolución directa con una cláusula objetivo. Si todas las combinaciones posibles llevan a una contradicción, la proposición original es verdadera.
+        </p>
+        <p class="text-xl my-4">
+            Ejemplo: Para probar que "Si A implica B, entonces no A implica no B", el método transforma ambas proposiciones en CNF y utiliza pasos de resolución lineal para llegar a una contradicción.
+        </p>
+        <figure class="flex justify-center items-center h-[40vh] w-full">
+            <p>Aquí falta un diagrama que conecte pasos de refutación lineal</p>
+        </figure>
+    </div>
+    <ul slot="fuentes">
+        <li>Teoría de Autómatas y Computación Lógica</li>
+        <li>"Lógica y Sistemas Deductivos" - Publicación académica</li>
+    </ul>
+</LayoutPost>

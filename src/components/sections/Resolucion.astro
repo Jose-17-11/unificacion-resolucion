@@ -1,7 +1,9 @@
 ---
 import { Image } from "astro:assets"
 import Card from "../Card.astro"
-import ImgExample from "../../assets/lambda.png"
+import ImgResolucion from "../../assets/resolucion.webp"
+import ImgResolucionPredicados from "../../assets/logica-de-predicados.webp"
+import ImgResolucionRefutacionLineal from "../../assets/resolucion-refutacion-lineal.png"
 ---
 <section class="w-full min-h-screen flex flex-col py-8" id="resolucion" >
     <div class="w-full min-h-[30vh] flex flex-col justify-start items-center my-8" >
@@ -14,14 +16,23 @@ import ImgExample from "../../assets/lambda.png"
         </p>
     </div>
     <aside class="w-full min-h-[70vh] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center items-stretch" >
-        <Card title="ejemplo" text="ejemplo texto de relleno xD">
-            <Image src={ImgExample} alt="Imagen de la card" class="w-full h-full" />
+        <Card 
+            title="Resolución" 
+            text="La resolución es un método de inferencia lógica que deduce conclusiones a partir de..." 
+            url="/resolucion">
+            <Image src={ImgResolucion} alt="Imagen de la card" class="w-full h-full rounded-t-lg" />
         </Card>
-        <Card title="ejemplo" text="ejemplo texto de relleno xD">
-            <Image src={ImgExample} alt="Imagen de la card" class="w-full h-full" />
+        <Card 
+            title="Resolucion en lógica de predicados" 
+            text="La resolución en lógica de predicados es una extensión de la lógica proposicional que permite..."
+            url="/resolucion-en-logica-de-predicados">
+            <Image src={ImgResolucionPredicados} alt="Imagen de la card" class="w-full h-full" />
         </Card>
-        <Card title="ejemplo" text="ejemplo texto de relleno xD">
-            <Image src={ImgExample} alt="Imagen de la card" class="w-full h-full" />
+        <Card 
+            title="Resolución por Refutación Lineal" 
+            text="Este método se basa en transformar las proposiciones en una representación estándar..."
+            url="/resolucion-por-refutacion-y-formas-normalizadas">
+            <Image src={ImgResolucionRefutacionLineal} alt="Imagen de la card" class="w-full h-full" />
         </Card>
     </aside>
 </section>

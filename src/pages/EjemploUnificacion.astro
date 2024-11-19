@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import ImgageEjemploUnificacion from '../assets/unificacion-ejemplo.jpg'
+import ImageEjemploPractico from '../assets/ejemplo-unificacion.png'
 import LayoutPost from '../layouts/LayoutPost.astro';
 ---
 <LayoutPost title="Ejemplo de unificación">
@@ -27,7 +28,7 @@ import LayoutPost from '../layouts/LayoutPost.astro';
                 </li>                  
             </ul>
             <figure class="flex justify-center items-center h-[40vh] w-full" >
-                <p>Aquí falta una imagen del ejemplo</p>
+                <Image src={ImageEjemploPractico} alt="Este es un ejemplo de unificacion">
             </figure>
         </div>
         <ul slot="fuentes" >
