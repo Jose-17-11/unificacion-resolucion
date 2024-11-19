@@ -1,9 +1,9 @@
 ---
 import Card from "../Card.astro"
 import { Image } from "astro:assets";
-import ImgExample from "../../assets/lambda.png"
 import EjemploUnificacion from "../../assets/unificacion-ejemplo.jpg"
 import UnificacionGeneral from "../../assets/unificacion-general.avif"
+import UnificacionAlgoritmos from "../../assets/algoritmos.jpeg"
 ---
 <section class="w-full min-h-screen bg-gray-800 flex flex-col py-8" id="unificacion" >
     <div class="w-full min-h-[30vh] flex flex-col justify-start items-center my-8" >
@@ -24,12 +24,14 @@ import UnificacionGeneral from "../../assets/unificacion-general.avif"
         <Card 
             title="Ejemplo unificación" 
             text="Este procedimiento evita colisiones al modificar los términos para hacerlos compatibles, asegurando que los términos resultantes..." 
-            url="/EjemploUnificacion">
+            url="/ejemplo-unificacion">
             <Image src={EjemploUnificacion} alt="Imagen de la card" class="w-full h-full rounded-t-lg" />
         </Card>
         <Card 
-            title="ejemplo" text="ejemplo texto de relleno xD" url="">
-            <Image src={ImgExample} alt="Imagen de la card" class="w-full h-full rounded-t-lg" />
+            title="La Unificación en Lógica de Primer Orden." 
+            text="La lógica de primer orden es una herramienta fundamental para representar..." 
+            url="/unificacion-en-logica-de-primer-orden">
+            <Image src={UnificacionAlgoritmos} alt="Imagen de la card" class="w-full h-full rounded-t-lg" />
         </Card>
     </aside>
 </section>

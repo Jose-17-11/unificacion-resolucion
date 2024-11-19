@@ -1,0 +1,38 @@
+---
+import { Image } from 'astro:assets';
+import UnificacionImage from '../assets/algoritmos.jpeg';
+import LayoutPost from '../layouts/LayoutPost.astro';
+---
+<LayoutPost title="Algoritmos de Unificación en Lógica de Primer Orden">
+    <Image src={UnificacionImage} alt="Diagrama de unificación en lógica de predicados" class="h-[30vh] w-auto object-cover" slot="ImgHeader" />
+    <div class="w-3/4 mx-auto pb-16">
+        <h1 class="text-4xl font-bold text-center py-4">Algoritmos de Unificación en Lógica de Primer Orden</h1>
+        <p class="text-xl my-4">
+            Los algoritmos de unificación son fundamentales en la lógica de primer orden, permitiendo emparejar términos y resolver problemas de consistencia lógica en sistemas computacionales.
+        </p>
+        <h2 class="text-2xl font-semibold mt-6">Algoritmo de Unificación de Robinson</h2>
+        <p class="text-lg my-4">
+            Propuesto en 1965, este algoritmo permite unificar términos mediante reglas claras y recursivas:
+        </p>
+        <ul class="list-disc pl-5">
+            <li class="py-2">Términos idénticos no requieren sustitución.</li>
+            <li class="py-2">Si uno de los términos es una variable, se reemplaza por el otro término, evitando ciclos.</li>
+            <li class="py-2">Para funciones, deben coincidir en nombre y número de argumentos; los argumentos se unifican recursivamente.</li>
+        </ul>
+        <p class="text-lg my-4">
+            Aunque eficiente, este método puede ser costoso computacionalmente en problemas grandes.
+        </p>
+        <h2 class="text-2xl font-semibold mt-6">Algoritmo de Martelli-Montanari</h2>
+        <p class="text-lg my-4">
+            Este algoritmo optimiza la unificación mediante el uso de estructuras de pila y mejora el manejo de términos complejos:
+        </p>
+        <ul class="list-disc pl-5">
+            <li class="py-2">Evita redundancias al revisar términos.</li>
+            <li class="py-2">Detecta y previene ciclos en sustituciones.</li>
+            <li class="py-2">Mejora la eficiencia en sistemas de razonamiento lógico.</li>
+        </ul>
+        <p class="text-lg my-4">
+            Por su capacidad de optimización, es ampliamente utilizado en sistemas avanzados de inferencia lógica y lenguajes de programación lógica como Prolog.
+        </p>
+    </div>
+</LayoutPost>

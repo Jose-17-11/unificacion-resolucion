@@ -1,11 +1,12 @@
 ---
 import { Image } from 'astro:assets';
 import ImgageEjemploUnificacion from '../assets/unificacion-general.avif'
+import Unificacion from '../assets/unificacion.png'
 import LayoutPost from '../layouts/LayoutPost.astro';
 ---
 <LayoutPost title="Unificación">
         <Image src={ImgageEjemploUnificacion} alt="Imagen de ejemplo de unificacion" class="h-[30vh] w-auto object-cover" slot="ImgHeader" />
-        <div class="w-3/4 mx-auto" >
+        <div class="w-3/4 mx-auto pb-16" >
             <h1 class="text-4xl font-bold text-center py-4" >Unificación</h1>
             <p class="text-xl my-4">
                 La unificación es un procedimiento clave en la lógica de primer orden, usado para emparejar términos y resolver conflictos lógicos en la representación de conocimiento. Es fundamental para sistemas de inferencia y lenguajes de programación lógica como Prolog.
@@ -14,8 +15,7 @@ import LayoutPost from '../layouts/LayoutPost.astro';
                 La unificación también puede verse como una búsqueda en un espacio conocido como rejilla de generalización, donde se introducen Rejilla de dos términos especiales llamados generalización top (>) y bottom (⊥). En este contexto, la unificación consiste en encontrar la junta más inferior de dos términos en el gráfico.
             </p>
             <figure class="flex justify-center items-center h-[40vh] w-full" >
-                <p>Aquí ira una imagen</p>
-                <!-- <Image src="" alt="" /> -->
+                <Image src={Unificacion} alt="Imagen representativa de unificacion" />
             </figure>
             <p class="text-xl my-4">
                 Rejilla de Generalización: En el contexto de la unificación, la "rejilla de generalización" proporciona un espacio abstracto en el que se identifican dos términos especiales, "top" (>) y "bottom" (⊥), que representan los puntos de mayor y menor generalización. Esta rejilla se usa en aprendizaje automático y procesamiento de conocimiento para identificar el "punto de intersección" más bajo o específico en el que dos términos pueden unificarse, evitando conflictos.
@@ -38,10 +38,4 @@ import LayoutPost from '../layouts/LayoutPost.astro';
                 </li>
             </ul>
         </div>
-        <ul slot="fuentes" >
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
 </LayoutPost>

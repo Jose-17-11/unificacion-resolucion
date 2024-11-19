@@ -5,7 +5,7 @@ import LayoutPost from '../layouts/LayoutPost.astro';
 ---
 <LayoutPost title="Resolución en Lógica">
     <Image src={ResolucionImage} alt="Ilustración de resolución lógica" class="h-[30vh] w-auto object-cover" slot="ImgHeader" />
-    <div class="w-3/4 mx-auto">
+    <div class="w-3/4 mx-auto pb-16">
         <h1 class="text-4xl font-bold text-center py-4">Resolución en Lógica</h1>
         <p class="text-xl my-4">
             La resolución es un método de inferencia lógica que deduce conclusiones a partir de un conjunto de proposiciones transformadas en cláusulas. Su técnica principal es la refutación por contradicción, donde se demuestra que la negación de una proposición lleva a una contradicción, confirmando su veracidad.
@@ -23,12 +23,5 @@ import LayoutPost from '../layouts/LayoutPost.astro';
         <p class="text-xl my-4">
             Si se sabe que se cumple "P ó Q" y "no P ó R", entonces se puede deducir que se cumple "Q ó R". Este proceso demuestra cómo la lógica proposicional lleva a conclusiones mediante resolución binaria.
         </p>
-        <figure class="flex justify-center items-center h-[40vh] w-full">
-            <p>Aquí falta una imagen ilustrativa de resolución</p>
-        </figure>
     </div>
-    <ul slot="fuentes">
-        <li>Introducción a la lógica proposicional y su uso en sistemas de resolución.</li>
-        <li>Ejemplos prácticos de inferencias lógicas mediante resolución binaria.</li>
-    </ul>
 </LayoutPost>
